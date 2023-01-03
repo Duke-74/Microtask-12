@@ -1,0 +1,38 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/api": "^1.3.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.35.0",
+    "@opentelemetry/exporter-collector": "^0.25.0",
+    "@opentelemetry/exporter-jaeger": "^1.8.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.34.0",
+    "@opentelemetry/instrumentation-express": "^0.32.0",
+    "@opentelemetry/instrumentation-http": "^0.34.0",
+    "@opentelemetry/instrumentation-mongodb": "^0.33.0",
+    "@opentelemetry/propagator-ot-trace": "^0.26.2",
+    "@opentelemetry/sdk-node": "^0.34.0",
+    "@opentelemetry/sdk-trace-node": "^1.8.0",
+    "@opentelemetry/tracing": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-prom-bundle": "^6.6.0",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.8.0",
+    "opentelemetry-instrumentation-express": "^0.34.0",
+    "prom-client": "^14.1.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
