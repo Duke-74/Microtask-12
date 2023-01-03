@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build . --file Dockerfile -t bigwafflemonster/server2:latest
+        run: docker build . --file Dockerfile -t Duke-74/server2:latest
 
       - name: Run Docker Conteiner
-        run: docker run -p 3001:3001 -d bigwafflemonster/server2:latest
+        run: docker run -p 3001:3001 -d Duke-74/server2:latest
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -32,4 +32,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push tag to Docker Hub
-        run: docker push bigwafflemonster/server2:latest
+        run: docker push Duke-74/server2:latest
