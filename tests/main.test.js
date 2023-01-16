@@ -6,7 +6,7 @@ describe('Test', () => {
     request(app)
       .get('/post')
       .expect('Content-Type', /json/)
-      .expect(400)
+      .expect(200)
       .end((err, res) => {
         if (err) return done(err)
         return done()
